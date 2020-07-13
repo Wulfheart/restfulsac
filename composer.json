@@ -1,17 +1,15 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "wulfheart/restfulsac",
+    "description": "Create a folder of restful single action controllers",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "restful", "single action controller"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/Wulfheart/restfulsac",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Wulfheart",
+            "email": "dev@alexfwulf.de",
             "role": "Developer"
         }
     ],
