@@ -15,7 +15,8 @@ class SkeletonServiceProvider extends ServiceProvider
                 SkeletonCommand::class,
             ]);
         }
-
+    }
+    
     public function register()
     {
 
