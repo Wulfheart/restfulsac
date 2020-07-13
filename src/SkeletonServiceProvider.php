@@ -10,7 +10,6 @@ class SkeletonServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-
             $this->commands([
                 SkeletonCommand::class,
             ]);
@@ -19,6 +18,5 @@ class SkeletonServiceProvider extends ServiceProvider
     
     public function register()
     {
-
     }
 }
