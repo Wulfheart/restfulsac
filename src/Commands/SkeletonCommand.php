@@ -14,7 +14,7 @@ class SkeletonCommand extends Command
 
     public function handle()
     {
-        $methodsSingular = ['create', 'store', 'show', 'update', 'destroy'];
+        $methodsSingular = ['create', 'store', 'show', 'update', 'edit', 'destroy'];
         $methodsPlural = ['index'];
         $controllers = collect();
         $pathArray = collect(explode('/', $this->argument('path')));
