@@ -4,8 +4,8 @@ namespace Spatie\Skeleton\Commands;
 
 use Illuminate\Console\Command;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class SkeletonCommand extends Command
 {
@@ -63,6 +63,7 @@ class SkeletonCommand extends Command
 
             if (File::exists($path)) {
                 $this->error("File {$path} already exists!");
+
                 return;
             }
 
@@ -70,7 +71,6 @@ class SkeletonCommand extends Command
 
             $this->info("File {$path} created.");
         }
-
     }
 
     private function viewPath($view)
@@ -86,7 +86,7 @@ class SkeletonCommand extends Command
     {
         $dir = dirname($path);
 
-        if (!file_exists($dir)) {
+        if (! file_exists($dir)) {
             mkdir($dir, 0777, true);
         }
     }
